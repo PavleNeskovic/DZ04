@@ -1,0 +1,246 @@
+
+//Variables
+@sirinaCentrirano:1200px;
+@visinaHedera:137px; //Primenjene Math Operations
+@svetloSiva:#EEEEEE;
+@siva:#D8D8D8;
+@tamnoSiva:#939393;
+@narandzasta:#F0563C;
+
+
+//Mixins
+.centriraj{
+  margin:0 auto;
+}
+.font15{
+  font-family: 'PT Serif', serif;
+  font-size: 15px;
+}
+.stripes{
+  background: repeating-linear-gradient(
+          -55deg,
+          @tamnoSiva,
+          @tamnoSiva 3px,
+          #FFFFFF 3px,
+          #FFFFFF 6px
+  );
+
+}
+body{
+  background:white;
+  margin:0;
+  padding:0;
+}
+
+#wrapper{
+  width:@sirinaCentrirano;
+  height:100%;
+  background:@svetloSiva;
+  .centriraj;
+}
+#wrapper2{
+  width:@sirinaCentrirano;
+  height:100%;
+  background:black;
+  .centriraj;
+}
+
+#header{
+  width:100%;
+  height:@visinaHedera;
+  background:@svetloSiva;
+}
+#logo{
+
+  float:left;
+  width:400px;
+  //Operations
+  height:@visinaHedera+1;
+  background:@svetloSiva;
+
+  //Nesting
+  img{
+    margin-top:20px;
+    margin-left:5px;
+  }
+}
+
+#decoration1{
+  margin-top:2px;
+  width:100%;
+  height:81px;
+  .stripes;
+
+}
+#menu{
+  float:left;
+  width:100%;
+  height:70px;
+  background:@siva;
+}
+.menuitem{
+  font-family: 'PT Serif', serif;
+  font-size: 17px;
+  font-weight: 300;
+  text-align:center;
+  line-height: 3.5;
+  margin-left:5px;
+  float:left;
+  width:100px;
+  height:100%;
+  background:black;
+  color:white;
+  //Nesting
+  a{
+    text-decoration:none;
+    color:white;
+  }
+  a:hover{
+    color:@narandzasta;
+  }
+
+
+}
+#searchbar{
+  float:right;
+  background:white;
+  margin-top:15px;
+  margin-right:15px;
+  width:350px;
+  height:40px;
+
+}
+#searchicon{
+  float:right;
+  padding-top:5px;
+
+}
+
+#contents{
+  width:@sirinaCentrirano;
+  height:2000px;
+  background:white;
+  .centriraj;
+}
+
+#leftdiv{
+  float:left;
+  width:57%;
+  height:100%;
+  background:white;
+}
+.news{
+  font-family: 'PT Serif', serif;
+  width:100%;
+  height:25%;
+  //Nesting
+  a{
+    text-decoration:none;
+    color:#97C6F4;
+  }
+  h3{
+    color:#CBCBCB;
+  }
+  h1{
+    color:black;
+    font-size:170%;
+  }
+  p{
+    font-size:120%;
+  }
+}
+
+#contents{
+  margin-top:50px;
+}
+#rightdiv{
+  float:right;
+  width:36%;
+  height:100%;
+  background:white;
+}
+.add{
+  padding:10px 10px 0px 30px;
+  border-style:solid;
+  border-color:gray;
+  margin-top:50px;
+  .font15;
+  width:90%;
+  height:30%;
+  //Nesting
+  a{
+    text-decoration:none;
+    color:#2793C7;
+  }
+  h1{
+    color:black;
+    font-size:170%;
+  }
+  p{
+    font-size:120%;
+  }
+}
+
+
+
+#footer{
+  width:100%;
+  height:200px;
+  background:black;
+}
+#sitemap{
+  float:left;
+  width:48%;
+  height:100%;
+  background:black;
+  margin-right:2%;
+}
+#copy{
+  .font15;
+  font-weight: 300;
+  margin-top:75px;
+  margin-left:15px;
+  color:white;
+  text-decoration:none;
+}
+.siteitem{
+  float:left;
+  .font15;
+  font-weight: 300;
+  text-align:center;
+  margin-top:25px;
+  margin-left:15px;
+  color:white;
+  text-decoration:none;
+  //Nesting
+  a{
+    text-decoration:none;
+    color:white;
+  }
+  a:hover{
+    color:#F0563C;
+  }
+}
+
+.circle{
+  float:left;
+  width:8px;
+  height:8px;
+  border-radius:4px;
+  background:#F0563C;
+  margin:30px 5px 0px 15px;
+}
+#socialnetworks{
+  float:right;
+  width:48%;
+  height:100%;
+  background:black;
+  margin-left:2%;
+  img{
+    margin-top:15px;
+    margin-left:100px;
+    width:75%;
+    height:50%;
+  }
+}
+
